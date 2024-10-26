@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffacc5;
+    background-color: #ffc2d1;
   }
 
   .container {
@@ -22,6 +22,10 @@
     gap: 20px;
     max-width: 500px;
     margin: 20px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0.5rem 1rem 3rem #ff8fab; /* Updated shadow color */
   }
 
   .container .tenor-gif-embed {
@@ -32,12 +36,25 @@
     display: flex;
     gap: 25px;
   }
-
+  
   .btn a {
     text-decoration: none;
     color: #111;
     background: #fff;
+    margin-top:1rem;
     padding: 10px 25px;
     border-radius: 8px;
-    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .btn a:hover {
+    transform: translateY(-5px); /* Moves the button up slightly */
+    box-shadow: 0.5rem 1rem 3rem #d2325a; /* Updated shadow color */
+  }
+  
+  @media (max-width:768px){
+    .container {
+      margin-bottom:15rem;
+    }
   }
